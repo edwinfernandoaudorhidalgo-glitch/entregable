@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingeniería de Sistemas - Universidad de la Amazonia</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Iconos Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Tu archivo CSS propio -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans transition-colors duration-300">
+
+  <!-- BARRA INSTITUCIONAL DEL ESTADO (estilo portal gov.co) -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-12 flex items-center justify-between gap-4">
+      <a href="https://www.colombia.co" target="_blank" rel="noopener" class="flex items-center gap-2 shrink-0" aria-label="República de Colombia">
+        <img src="img/republica-colombia.png" alt="República de Colombia" class="h-7 w-auto"
+             onerror="this.style.display='none';this.nextElementSibling.classList.remove('hidden')">
+        <span class="hidden text-xs font-semibold text-slate-700">República de Colombia</span>
+      </a>
+      <a href="https://www.mineducacion.gov.co" target="_blank" rel="noopener" class="flex items-center gap-2 shrink-0" aria-label="Ministerio de Educación Nacional">
+        <img src="img/mineducacion.png" alt="Ministerio de Educación Nacional" class="h-7 w-auto"
+             onerror="this.style.display='none';this.nextElementSibling.classList.remove('hidden')">
+        <span class="hidden text-xs font-semibold text-slate-700">Ministerio de Educación Nacional</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- BARRA DE NAVEGACIÓN INSTITUCIONAL -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- LOGO UNIAMAZONIA + PROGRAMA -->
+        <div class="flex items-center space-x-3">
+          <img src="img/uniamazonia.png" alt="Universidad de la Amazonia" class="h-12 w-auto"
+               onerror="this.style.display='none'">
+          <div class="pl-3 border-l border-slate-200">
+            <span class="block text-xs font-bold tracking-widest text-emerald-700 uppercase">Uniamazonia</span>
+            <span class="block text-sm font-bold text-slate-900 leading-none">Ingeniería de Sistemas</span>
+          </div>
+        </div>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav class="hidden lg:flex space-x-8 text-sm font-medium text-slate-600">
+          <a href="#inicio" class="hover:text-emerald-600 transition-colors">Inicio</a>
+          <a href="#presentacion" class="hover:text-emerald-600 transition-colors">Programa</a>
+          <a href="#malla-curricular" class="hover:text-emerald-600 transition-colors">Malla Curricular</a>
+          <a href="#contacto" class="hover:text-emerald-600 transition-colors">Contacto</a>
+        </nav>
+
+        <div class="flex items-center space-x-3">
+          <a href="#malla-curricular" class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg text-white bg-emerald-600 hover:bg-emerald-700 transition-all shadow-md">
+            Ver Malla Curricular
+            <i data-lucide="arrow-right" class="w-4 h-4 ml-1.5"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN HERO DE BIENVENIDA -->
+  <section id="inicio" class="hero-bg relative overflow-hidden text-white py-16 lg:py-24">
+    <!-- Efecto Decorativo de Fondo -->
+    
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 text-center lg:text-left">
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+            Construye el futuro tecnológico de la <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200">Amazonia y el Mundo</span>
+          </h1>
+          <p class="text-lg sm:text-xl text-slate-300 mb-8 max-w-2xl mx-auto lg:mx-0 font-light">
+            Bienvenido al Programa de Ingeniería de Sistemas de la Universidad de la Amazonia. Formamos profesionales íntegros, innovadores y líderes en soluciones computacionales y TIC.
+          </p>
+
+          <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+            <a href="#malla-curricular" class="px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold shadow-lg shadow-emerald-500/25 transition-all">
+              Explorar Plan de Estudios
+            </a>
+            <a href="#presentacion" class="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold backdrop-blur-sm border border-white/10 transition-all">
+              Conocer el Programa
+            </a>
+          </div>
+        </div>
+
+        <!-- TARJETA DE RESUMEN TÉCNICO EN EL HERO -->
+        <div class="lg:col-span-5">
+          <div class="glass-card rounded-2xl p-6 sm:p-8 border border-white/20 text-slate-800 shadow-2xl">
+            <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
+              <i data-lucide="bookmark" class="w-5 h-5 text-emerald-600 mr-2"></i> Ficha Técnica del Programa
+            </h3>
+            
+            <div class="space-y-4 text-sm">
+              <div class="flex justify-between py-2 border-b border-slate-200">
+                <span class="text-slate-500">Título que Otorga:</span>
+                <span class="font-bold text-slate-900">Ingeniero(a) de Sistemas</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-200">
+                <span class="text-slate-500">Modalidad / Jornada:</span>
+                <span class="font-semibold text-slate-800">Presencial / Diurna</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-200">
+                <span class="text-slate-500">Duración:</span>
+                <span class="font-semibold text-slate-800">10 Semestres</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-200">
+                <span class="text-slate-500">Créditos Académicos:</span>
+                <span class="font-bold text-emerald-600">178 Créditos</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-200">
+                <span class="text-slate-500">Código SNIES:</span>
+                <span class="font-mono bg-slate-100 px-2 py-0.5 rounded text-xs">52384</span>
+              </div>
+              <div class="flex justify-between py-2">
+                <span class="text-slate-500">Sede:</span>
+                <span class="font-semibold text-slate-800">Florencia - Caquetá</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRANJA DE ACREDITACIÓN DE ALTA CALIDAD -->
+  <section id="acreditacion" class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
+
+        <!-- Sello -->
+        <div class="shrink-0 w-28 h-28 flex items-center justify-center">
+          <img src="img/acreditacion-alta-calidad.png" alt="Sello de Acreditación Institucional de Alta Calidad" class="max-h-28 w-auto"
+               onerror="this.style.display='none';this.nextElementSibling.classList.remove('hidden')">
+          <div class="hidden seal-fallback" aria-hidden="true">
+            <i data-lucide="award" class="w-12 h-12 text-amber-600"></i>
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="text-center md:text-left flex-1">
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Universidad de la Amazonia, institución acreditada en alta calidad</h2>
+          <p class="mt-2 text-slate-600 text-sm sm:text-base max-w-2xl">
+            El Ministerio de Educación Nacional reconoce la calidad de nuestra institución y de sus programas académicos, entre ellos Ingeniería de Sistemas.
+          </p>
+        </div>
+
+        <!-- Aval -->
+        <div class="shrink-0 flex items-center gap-5 md:pl-8 md:border-l border-slate-200">
+          <img src="img/mineducacion.png" alt="Ministerio de Educación Nacional" class="h-12 w-auto" onerror="this.style.display='none'">
+          <img src="img/republica-colombia.png" alt="República de Colombia" class="h-12 w-auto" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÁS SECCIONES DEL PROGRAMA -->
+  <section id="presentacion" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl font-extrabold text-slate-900">Propósito de Formación e Identidad</h2>
+        <p class="mt-4 text-lg text-slate-600">Comprometidos con el desarrollo tecnológico, económico y sustentable de la Amazonia.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xl mb-4">
+            <i data-lucide="target" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Misión</h3>
+          <p class="text-slate-600 leading-relaxed text-sm">
+            Formar profesionales íntegros con capacidad de crear, innovar, formular y solucionar problemáticas organizacionales y productivas, apoyados en el desarrollo de sistemas de información e infraestructura informática.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xl mb-4">
+            <i data-lucide="eye" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Visión</h3>
+          <p class="text-slate-600 leading-relaxed text-sm">
+            Ser un programa académico en permanente acreditación de alta calidad, líder en la formación integral de ingenieros competentes en investigación, desarrollo tecnológico y compromiso social.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORADOR INTERACTIVO DE MALLA CURRICULAR -->
+  <section id="malla-curricular" class="py-16 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-slate-900">Malla Curricular Interactiva</h2>
+        <p class="text-slate-600 mt-2">Explora las asignaturas de los 10 semestres académicos</p>
+      </div>
+
+      <!-- BOTONES DE SEMESTRES (Filtro) -->
+      <div class="flex overflow-x-auto pb-4 gap-2 justify-start lg:justify-center mb-8" id="semester-buttons">
+        <!-- Los botones se generan dinámicamente con JS -->
+      </div>
+
+      <!-- BUSCADOR -->
+      <div class="max-w-md mx-auto mb-8">
+        <div class="relative">
+          <input type="text" id="search-subject" placeholder="Buscar materia (ej. Programación, Cálculo...)" class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm">
+          <i data-lucide="search" class="w-5 h-5 absolute left-3 top-3.5 text-slate-400"></i>
+        </div>
+      </div>
+
+      <!-- TARJETAS DE MATERIAS -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="subjects-container">
+        <!-- Renderizado dinámico desde script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA / CONTACTO -->
+  <footer id="contacto" class="bg-slate-900 text-white py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h4 class="text-lg font-bold text-white mb-4">Ingeniería de Sistemas</h4>
+          <p class="text-sm text-slate-400 mb-2">Universidad de la Amazonia</p>
+          <p class="text-sm text-slate-400">Florencia, Caquetá - Colombia</p>
+          <div class="mt-5 inline-flex items-center gap-4 bg-white rounded-xl px-4 py-3">
+            <img src="img/mineducacion.png" alt="Ministerio de Educación Nacional" class="h-9 w-auto" onerror="this.style.display='none'">
+            <img src="img/republica-colombia.png" alt="República de Colombia" class="h-9 w-auto" onerror="this.style.display='none'">
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-white mb-4">Contacto Directo</h4>
+          <p class="text-sm text-slate-400 mb-1">Coordinación: Paula Andrea Chica Murcia</p>
+          <p class="text-sm text-slate-400 mb-1">Teléfono: 320 454 1936</p>
+          <p class="text-sm text-slate-400">Correo: pisistemas@uniamazonia.edu.co</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-white mb-4">Ubicación</h4>
+          <p class="text-sm text-slate-400">Campus Florencia, Barrio El Porvenir, Bloque Administrativo, 1er Piso.</p>
+        </div>
+      </div>
+      <div class="border-t border-slate-800 mt-8 pt-6 text-center text-xs text-slate-500">
+        © Universidad de la Amazonia - Programa de Ingeniería de Sistemas. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- CÓDIGO JAVASCRIPT PRINCIPAL -->
+  <script src="script.js"></script>
+</body>
+</html>

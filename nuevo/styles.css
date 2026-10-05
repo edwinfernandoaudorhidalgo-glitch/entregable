@@ -1,0 +1,49 @@
+/* Animaciones y estilos personalizados */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.03); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s infinite ease-in-out;
+}
+
+/* Efecto de cristal para tarjetas */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Transiciones de la Malla Curricular */
+.subject-card {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subject-card:hover {
+  transform: translateY(-3px);
+}
+/* Respaldo del sello de acreditación si no existe la imagen */
+.seal-fallback {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 9999px;
+  border: 3px solid #d97706;
+  background: #fffbeb;
+  align-items: center;
+  justify-content: center;
+}
+.seal-fallback:not(.hidden) { display: flex; }
+
+/* Fondo del hero: foto de la carrera con capa oscura para que el texto se lea.
+   Si no existe img/fondo-hero.png, se ve solo el degradado oscuro. */
+.hero-bg {
+  background-color:#0f172a;
+  background-image:
+    linear-gradient(to right, rgba(2, 6, 23, 0.85) 0%, rgba(2, 6, 23, 0.65) 55%, rgba(2, 6, 23, 0.45) 100%),
+    url("img/images.png");
+    
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
